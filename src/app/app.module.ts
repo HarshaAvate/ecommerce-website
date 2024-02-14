@@ -9,10 +9,14 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ProjectComponent } from './project/project.component';
 import { BlogComponent } from './blog/blog.component';
-import { ContactComponent } from './contact/contact.component';
+
 import { ServicesComponent } from './services/services.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CustomerDetailComponent } from './customer-details/customer-details.component';
+
+import { TaskComponent } from './task/task.component';
+import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
+import { ContactComponent } from './contact/contact.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,16 +27,22 @@ import { CustomerDetailComponent } from './customer-details/customer-details.com
     LogoutComponent,
     ProjectComponent,
     BlogComponent,
-    ContactComponent,
-    ServicesComponent,
-    CustomerDetailComponent,
     
+    ServicesComponent,
+   
+    TaskComponent,
+        CustomerDetailComponent,
+        ContactComponent,
+
+        
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

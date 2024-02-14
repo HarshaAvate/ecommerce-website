@@ -9,7 +9,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-import { CustomerDetailComponent } from './customer-details/customer-details.component';
+import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
 
 const routes: Routes = [
   {

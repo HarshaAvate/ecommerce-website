@@ -1,4 +1,4 @@
-import { Component,EventEmitter,Input,Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Customer } from '../customer';
 
 @Component({
@@ -7,17 +7,12 @@ import { Customer } from '../customer';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  @Input() customer: Customer= new Customer ();
-
-  @Output() customerchange: EventEmitter<Customer> =
-  new EventEmitter<Customer>();
-
+  @Input() customer:Customer= new Customer();
+  @Output() customerChange:EventEmitter<Customer>= new EventEmitter<Customer>();
   constructor() {}
+  ngOnInit() {}
   
-  ngOnInit(){} 
-
   update(){
-    this.customerchange.emit(this.customer);
+    this.customerChange.emit(this.customer)
   }
-
 }
